@@ -71,7 +71,7 @@ public class JFrameHW4 extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\vvele\\Downloads\\try\\src\\main\\java\\JFrame\\profile icon.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\vvele\\Downloads\\profile icon.png")); // NOI18N
         jLabel6.setText("jLabel6");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -126,7 +126,7 @@ public class JFrameHW4 extends javax.swing.JFrame {
                 .addContainerGap(30, Short.MAX_VALUE))
         );
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\vvele\\Downloads\\try\\src\\main\\java\\JFrame\\log in.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\vvele\\Downloads\\log in.png")); // NOI18N
         jLabel3.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
