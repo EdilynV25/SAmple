@@ -232,6 +232,11 @@ public class JFrameHW4 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Please fill out Email");
         } else if (password.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Please fill out Password");
+        } else if (email.equals("employeeone1@gmail.com") && password.equals("employee123")) {
+            JOptionPane.showMessageDialog(this, "Log In Successful!");
+            Portal frame2 = new Portal();
+            frame2.setVisible(true);
+            dispose();
         } else {
             User user = UserData.findUserByEmail(email);
             if (user != null && user.getPassword().equals(password)) {
