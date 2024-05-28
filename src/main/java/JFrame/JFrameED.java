@@ -150,9 +150,9 @@ public class JFrameED extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(550, 550, 550))
+                .addGap(493, 493, 493))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -259,7 +259,7 @@ public class JFrameED extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        String filePath = "C:\\Users\\vvele\\Downloads\\HW4\\src\\main\\java\\JFrame\\resources\\FINAL ED.csv"; // Replace this with the actual path to your CSV file
+        String filePath = "C:\\Users\\vvele\\Downloads\\HW4CP2\\src\\main\\java\\JFrame\\FINAL ED.csv"; // Replace this with the actual path to your CSV file
 
         boolean isFirstRow = true;
 
