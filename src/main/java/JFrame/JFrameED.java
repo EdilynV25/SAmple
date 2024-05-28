@@ -259,7 +259,9 @@ public class JFrameED extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        String filePath = "C:\\Users\\vvele\\Downloads\\HW4CP2\\src\\main\\java\\JFrame\\FINAL ED.csv"; // Replace this with the actual path to your CSV file
+        String filePath = "C:\\Users\\vvele\\Downloads\\HW4CP2\\src\\main\\java\\JFrame\\FINAL ED.csv";
+        
+//      Kailangan palitan csv file path niyo para mag generate yung details
 
         boolean isFirstRow = true;
 
