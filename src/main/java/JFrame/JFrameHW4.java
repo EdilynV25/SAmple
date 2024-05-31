@@ -258,8 +258,7 @@ public class JFrameHW4 extends javax.swing.JFrame {
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         // TODO add your handling code here:
         SignUp signframe = new SignUp();
-        signframe.setVisible(true);
-        dispose();
+        signframe.setVisible(false);
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
