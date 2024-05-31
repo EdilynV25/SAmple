@@ -11,6 +11,8 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
+import javax.swing.JLabel;
+import JFrame.ViewEmployee;
 
 /**
  *
@@ -60,11 +62,11 @@ public class JFrameED extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Employee #", "Last Name", "First Name", "SSS #", "PhilHealth #", "TIN #", "Pag IBIG #"
+                "Employee #", "Last Name", "First Name", "SSS #", "PhilHealth #", "TIN #", "Pag IBIG #", "Birthday", "Address", "Phone Number", "Status", "Position", "Immediate Supervisor", "Basic Salary", "Rice Subsidy", "Phone Allowance", "Clothing Allowance", "Gross Semi-Monthly Rate", "Hourly Rate"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -77,6 +79,44 @@ public class JFrameED extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(7).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(7).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(7).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(8).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(8).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(8).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(9).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(9).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(9).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(10).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(10).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(10).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(11).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(11).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(11).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(12).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(12).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(12).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(13).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(13).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(13).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(14).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(14).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(14).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(15).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(15).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(15).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(16).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(16).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(16).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(17).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(17).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(17).setMaxWidth(0);
+            jTable1.getColumnModel().getColumn(18).setMinWidth(0);
+            jTable1.getColumnModel().getColumn(18).setPreferredWidth(0);
+            jTable1.getColumnModel().getColumn(18).setMaxWidth(0);
+        }
 
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -241,7 +281,19 @@ public class JFrameED extends javax.swing.JFrame {
         String employeeNumber = model.getValueAt(row, 0).toString();
         String lastName = model.getValueAt(row, 1).toString();
         String firstName = model.getValueAt(row, 2).toString();
-//        String ewan = model.getValueAt(row, 7).toString();
+        String birthday = model.getValueAt(row, 7).toString();
+        String address = model.getValueAt(row, 8).toString();
+        String phoneNumber = model.getValueAt(row, 9).toString();
+        String status = model.getValueAt(row, 10).toString();
+        String position = model.getValueAt(row, 11).toString();
+        String supervisor = model.getValueAt(row, 12).toString();
+        String basicSalary = model.getValueAt(row, 13).toString();
+        String riceSub = model.getValueAt(row, 14).toString();
+        String phoneAll = model.getValueAt(row, 15).toString();
+        String clothAll = model.getValueAt(row, 16).toString();
+        String grossRate = model.getValueAt(row, 17).toString();
+        String hourlyRate = model.getValueAt(row, 18).toString();
+//        String birthday = model.getValueAt(row, 7).toString();
 //        jTable1.removeColumn(jTable1.getColumnModel().getColumn(0)); note muna etu
         
         jtRowData.setVisible(true);
@@ -251,15 +303,34 @@ public class JFrameED extends javax.swing.JFrame {
         jtRowData.jLabel1.setText(employeeNumber);
         jtRowData.jLabel4.setText(lastName);
         jtRowData.jLabel6.setText(firstName);
-//        jtRowData.jLabel8.setText(ewan);
+        jtRowData.jLabel8.setText(birthday);
+        jtRowData.jLabel10.setText(address);
+        jtRowData.jLabel12.setText(phoneNumber);
+        jtRowData.jLabel15.setText(status);
+        jtRowData.jLabel16.setText(position);
+        jtRowData.jLabel18.setText(supervisor);
+        jtRowData.jLabel20.setText(basicSalary);
+        jtRowData.jLabel26.setText(riceSub);
+        jtRowData.jLabel28.setText(phoneAll);
+        jtRowData.jLabel30.setText(clothAll);
+        jtRowData.jLabel32.setText(grossRate);
+        jtRowData.jLabel34.setText(hourlyRate);
         
+        
+        
+//        jtRowData.jLabel8.setText(birthday);
+
+
+        
+
+
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
 
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        String filePath = "C:\\Users\\vvele\\Downloads\\HW4CP2\\src\\main\\java\\JFrame\\FINAL ED.csv";
+        String filePath = "C:\\Users\\vvele\\Downloads\\HWCP2\\src\\main\\java\\JFrame\\FINAL ED.csv";
         
 //      Kailangan palitan csv file path niyo para mag generate yung details
 
